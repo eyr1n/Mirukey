@@ -20,13 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24D4B5382FF167C100FA2DA9 /* Miru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miru.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D4B5382FF167C100FA2DA9 /* Mirukey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mirukey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		24D4B53A2FF167C100FA2DA9 /* Miru */ = {
+		24D4B53A2FF167C100FA2DA9 /* Mirukey */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Miru;
+			path = Mirukey;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -55,7 +55,7 @@
 		24D4B52F2FF167C100FA2DA9 = {
 			isa = PBXGroup;
 			children = (
-				24D4B53A2FF167C100FA2DA9 /* Miru */,
+				24D4B53A2FF167C100FA2DA9 /* Mirukey */,
 				24D4B5392FF167C100FA2DA9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +63,7 @@
 		24D4B5392FF167C100FA2DA9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24D4B5382FF167C100FA2DA9 /* Miru.app */,
+				24D4B5382FF167C100FA2DA9 /* Mirukey.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,9 +71,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		24D4B5372FF167C100FA2DA9 /* Miru */ = {
+		24D4B5372FF167C100FA2DA9 /* Mirukey */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24D4B5432FF167C100FA2DA9 /* Build configuration list for PBXNativeTarget "Miru" */;
+			buildConfigurationList = 24D4B5432FF167C100FA2DA9 /* Build configuration list for PBXNativeTarget "Mirukey" */;
 			buildPhases = (
 				24D4B5342FF167C100FA2DA9 /* Sources */,
 				24D4B5352FF167C100FA2DA9 /* Frameworks */,
@@ -84,9 +84,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				24D4B53A2FF167C100FA2DA9 /* Miru */,
+				24D4B53A2FF167C100FA2DA9 /* Mirukey */,
 			);
-			name = Miru;
+			name = Mirukey;
 			packageProductDependencies = (
 				24D4B5DA2FF16D9700FA2DA9 /* MisskeyAPI */,
 				24D4B5DD2FF16F4C00FA2DA9 /* MFMParser */,
@@ -100,7 +100,7 @@
 				24D4B67C2FF170FA00FA2DA9 /* KeychainAccess */,
 			);
 			productName = Miru;
-			productReference = 24D4B5382FF167C100FA2DA9 /* Miru.app */;
+			productReference = 24D4B5382FF167C100FA2DA9 /* Mirukey.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -118,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 24D4B5332FF167C100FA2DA9 /* Build configuration list for PBXProject "Miru" */;
+			buildConfigurationList = 24D4B5332FF167C100FA2DA9 /* Build configuration list for PBXProject "Mirukey" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -143,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				24D4B5372FF167C100FA2DA9 /* Miru */,
+				24D4B5372FF167C100FA2DA9 /* Mirukey */,
 			);
 		};
 /* End PBXProject section */
@@ -309,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.eyrin.Miru;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.eyrin.Mirukey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -341,7 +341,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.eyrin.Miru;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.eyrin.Mirukey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -357,7 +357,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		24D4B5332FF167C100FA2DA9 /* Build configuration list for PBXProject "Miru" */ = {
+		24D4B5332FF167C100FA2DA9 /* Build configuration list for PBXProject "Mirukey" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24D4B5412FF167C100FA2DA9 /* Debug */,
@@ -366,7 +366,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24D4B5432FF167C100FA2DA9 /* Build configuration list for PBXNativeTarget "Miru" */ = {
+		24D4B5432FF167C100FA2DA9 /* Build configuration list for PBXNativeTarget "Mirukey" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24D4B5442FF167C100FA2DA9 /* Debug */,
