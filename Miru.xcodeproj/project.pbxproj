@@ -16,6 +16,7 @@
 		24D4B5EC2FF1705400FA2DA9 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 24D4B5EB2FF1705400FA2DA9 /* SDWebImageSwiftUI */; };
 		24D4B5EF2FF1707600FA2DA9 /* MediaViewer in Frameworks */ = {isa = PBXBuildFile; productRef = 24D4B5EE2FF1707600FA2DA9 /* MediaViewer */; };
 		24D4B5F12FF1707600FA2DA9 /* MediaViewerBuiltins in Frameworks */ = {isa = PBXBuildFile; productRef = 24D4B5F02FF1707600FA2DA9 /* MediaViewerBuiltins */; };
+		24D4B67D2FF170FA00FA2DA9 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 24D4B67C2FF170FA00FA2DA9 /* KeychainAccess */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 				24D4B5E42FF16FFA00FA2DA9 /* Flow in Frameworks */,
 				24D4B5DE2FF16F4C00FA2DA9 /* MFMParser in Frameworks */,
 				24D4B5DB2FF16D9700FA2DA9 /* MisskeyAPI in Frameworks */,
+				24D4B67D2FF170FA00FA2DA9 /* KeychainAccess in Frameworks */,
 				24D4B5E12FF16F5C00FA2DA9 /* MFMRenderer in Frameworks */,
 				24D4B5EF2FF1707600FA2DA9 /* MediaViewer in Frameworks */,
 				24D4B5E92FF1703300FA2DA9 /* SDWebImageMapKit in Frameworks */,
@@ -95,6 +97,7 @@
 				24D4B5EB2FF1705400FA2DA9 /* SDWebImageSwiftUI */,
 				24D4B5EE2FF1707600FA2DA9 /* MediaViewer */,
 				24D4B5F02FF1707600FA2DA9 /* MediaViewerBuiltins */,
+				24D4B67C2FF170FA00FA2DA9 /* KeychainAccess */,
 			);
 			productName = Miru;
 			productReference = 24D4B5382FF167C100FA2DA9 /* Miru.app */;
@@ -132,6 +135,7 @@
 				24D4B5E52FF1703300FA2DA9 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				24D4B5EA2FF1705400FA2DA9 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				24D4B5ED2FF1707600FA2DA9 /* XCRemoteSwiftPackageReference "MediaViewer" */,
+				24D4B67B2FF170FA00FA2DA9 /* XCRemoteSwiftPackageReference "keychainaccess" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 24D4B5392FF167C100FA2DA9 /* Products */;
@@ -311,8 +315,9 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -343,8 +348,9 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -420,6 +426,14 @@
 				minimumVersion = 0.1.1;
 			};
 		};
+		24D4B67B2FF170FA00FA2DA9 /* XCRemoteSwiftPackageReference "keychainaccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/keychainaccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -464,6 +478,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 24D4B5ED2FF1707600FA2DA9 /* XCRemoteSwiftPackageReference "MediaViewer" */;
 			productName = MediaViewerBuiltins;
+		};
+		24D4B67C2FF170FA00FA2DA9 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24D4B67B2FF170FA00FA2DA9 /* XCRemoteSwiftPackageReference "keychainaccess" */;
+			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

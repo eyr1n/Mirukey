@@ -1,24 +1,17 @@
-//
-//  ContentView.swift
-//  Miru
-//
-//  Created by rin on 2026/06/28.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+  @State private var sessionManager = SessionManager()
 
-#Preview {
-    ContentView()
+  var body: some View {
+    Group {
+      if let session = sessionManager.session {
+        AuthenticatedContentView(session: session)
+          .id(session.account.id)
+      } else {
+        LoginView()
+      }
+    }
+    .environment(sessionManager)
+  }
 }
