@@ -5,8 +5,8 @@ import MisskeyAPI
 import UIKit
 
 enum MiAuth {
-  private static let appName = "MyMisskeyClient"
-  private static let appScheme = "mymisskeyclient"
+  private static let appName = "Mirukey"
+  private static let appScheme = "mirukey"
   private static let permissions = [
     "read:account",
     "read:notifications",
