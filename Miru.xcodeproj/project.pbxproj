@@ -6,6 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		24D4B5DB2FF16D9700FA2DA9 /* MisskeyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 24D4B5DA2FF16D9700FA2DA9 /* MisskeyAPI */; };
+		24D4B5DE2FF16F4C00FA2DA9 /* MFMParser in Frameworks */ = {isa = PBXBuildFile; productRef = 24D4B5DD2FF16F4C00FA2DA9 /* MFMParser */; };
+		24D4B5E12FF16F5C00FA2DA9 /* MFMRenderer in Frameworks */ = {isa = PBXBuildFile; productRef = 24D4B5E02FF16F5C00FA2DA9 /* MFMRenderer */; };
+		24D4B5E42FF16FFA00FA2DA9 /* Flow in Frameworks */ = {isa = PBXBuildFile; productRef = 24D4B5E32FF16FFA00FA2DA9 /* Flow */; };
+		24D4B5E72FF1703300FA2DA9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 24D4B5E62FF1703300FA2DA9 /* SDWebImage */; };
+		24D4B5E92FF1703300FA2DA9 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 24D4B5E82FF1703300FA2DA9 /* SDWebImageMapKit */; };
+		24D4B5EC2FF1705400FA2DA9 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 24D4B5EB2FF1705400FA2DA9 /* SDWebImageSwiftUI */; };
+		24D4B5EF2FF1707600FA2DA9 /* MediaViewer in Frameworks */ = {isa = PBXBuildFile; productRef = 24D4B5EE2FF1707600FA2DA9 /* MediaViewer */; };
+		24D4B5F12FF1707600FA2DA9 /* MediaViewerBuiltins in Frameworks */ = {isa = PBXBuildFile; productRef = 24D4B5F02FF1707600FA2DA9 /* MediaViewerBuiltins */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		24D4B5382FF167C100FA2DA9 /* Miru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +35,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D4B5EC2FF1705400FA2DA9 /* SDWebImageSwiftUI in Frameworks */,
+				24D4B5E42FF16FFA00FA2DA9 /* Flow in Frameworks */,
+				24D4B5DE2FF16F4C00FA2DA9 /* MFMParser in Frameworks */,
+				24D4B5DB2FF16D9700FA2DA9 /* MisskeyAPI in Frameworks */,
+				24D4B5E12FF16F5C00FA2DA9 /* MFMRenderer in Frameworks */,
+				24D4B5EF2FF1707600FA2DA9 /* MediaViewer in Frameworks */,
+				24D4B5E92FF1703300FA2DA9 /* SDWebImageMapKit in Frameworks */,
+				24D4B5E72FF1703300FA2DA9 /* SDWebImage in Frameworks */,
+				24D4B5F12FF1707600FA2DA9 /* MediaViewerBuiltins in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +86,15 @@
 			);
 			name = Miru;
 			packageProductDependencies = (
+				24D4B5DA2FF16D9700FA2DA9 /* MisskeyAPI */,
+				24D4B5DD2FF16F4C00FA2DA9 /* MFMParser */,
+				24D4B5E02FF16F5C00FA2DA9 /* MFMRenderer */,
+				24D4B5E32FF16FFA00FA2DA9 /* Flow */,
+				24D4B5E62FF1703300FA2DA9 /* SDWebImage */,
+				24D4B5E82FF1703300FA2DA9 /* SDWebImageMapKit */,
+				24D4B5EB2FF1705400FA2DA9 /* SDWebImageSwiftUI */,
+				24D4B5EE2FF1707600FA2DA9 /* MediaViewer */,
+				24D4B5F02FF1707600FA2DA9 /* MediaViewerBuiltins */,
 			);
 			productName = Miru;
 			productReference = 24D4B5382FF167C100FA2DA9 /* Miru.app */;
@@ -94,6 +124,15 @@
 			);
 			mainGroup = 24D4B52F2FF167C100FA2DA9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				24D4B5D92FF16D9700FA2DA9 /* XCLocalSwiftPackageReference "Packages/MisskeyAPI" */,
+				24D4B5DC2FF16F4C00FA2DA9 /* XCLocalSwiftPackageReference "Packages/MFMParser" */,
+				24D4B5DF2FF16F5C00FA2DA9 /* XCLocalSwiftPackageReference "Packages/MFMRenderer" */,
+				24D4B5E22FF16FFA00FA2DA9 /* XCRemoteSwiftPackageReference "SwiftUI-Flow" */,
+				24D4B5E52FF1703300FA2DA9 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				24D4B5EA2FF1705400FA2DA9 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				24D4B5ED2FF1707600FA2DA9 /* XCRemoteSwiftPackageReference "MediaViewer" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 24D4B5392FF167C100FA2DA9 /* Products */;
 			projectDirPath = "";
@@ -332,6 +371,101 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		24D4B5D92FF16D9700FA2DA9 /* XCLocalSwiftPackageReference "Packages/MisskeyAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/MisskeyAPI;
+		};
+		24D4B5DC2FF16F4C00FA2DA9 /* XCLocalSwiftPackageReference "Packages/MFMParser" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/MFMParser;
+		};
+		24D4B5DF2FF16F5C00FA2DA9 /* XCLocalSwiftPackageReference "Packages/MFMRenderer" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/MFMRenderer;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24D4B5E22FF16FFA00FA2DA9 /* XCRemoteSwiftPackageReference "SwiftUI-Flow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tevelee/SwiftUI-Flow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.4.0;
+			};
+		};
+		24D4B5E52FF1703300FA2DA9 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.7;
+			};
+		};
+		24D4B5EA2FF1705400FA2DA9 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.4;
+			};
+		};
+		24D4B5ED2FF1707600FA2DA9 /* XCRemoteSwiftPackageReference "MediaViewer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/noppefoxwolf/MediaViewer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24D4B5DA2FF16D9700FA2DA9 /* MisskeyAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MisskeyAPI;
+		};
+		24D4B5DD2FF16F4C00FA2DA9 /* MFMParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MFMParser;
+		};
+		24D4B5E02FF16F5C00FA2DA9 /* MFMRenderer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MFMRenderer;
+		};
+		24D4B5E32FF16FFA00FA2DA9 /* Flow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24D4B5E22FF16FFA00FA2DA9 /* XCRemoteSwiftPackageReference "SwiftUI-Flow" */;
+			productName = Flow;
+		};
+		24D4B5E62FF1703300FA2DA9 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24D4B5E52FF1703300FA2DA9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		24D4B5E82FF1703300FA2DA9 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24D4B5E52FF1703300FA2DA9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		24D4B5EB2FF1705400FA2DA9 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24D4B5EA2FF1705400FA2DA9 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		24D4B5EE2FF1707600FA2DA9 /* MediaViewer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24D4B5ED2FF1707600FA2DA9 /* XCRemoteSwiftPackageReference "MediaViewer" */;
+			productName = MediaViewer;
+		};
+		24D4B5F02FF1707600FA2DA9 /* MediaViewerBuiltins */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24D4B5ED2FF1707600FA2DA9 /* XCRemoteSwiftPackageReference "MediaViewer" */;
+			productName = MediaViewerBuiltins;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24D4B5302FF167C100FA2DA9 /* Project object */;
 }

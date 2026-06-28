@@ -1,0 +1,15 @@
+{
+  "originHash" : "0495feddbb6c39c8674282530689753c9d7e64deb9ec5a5bf79538646c67286c",
+  "pins" : [
+    {
+      "identity" : "apikit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ishkawa/APIKit.git",
+      "state" : {
+        "revision" : "b839e53b870104798035b279d2a6168b0a2227b1",
+        "version" : "5.4.0"
+      }
+    }
+  ],
+  "version" : 3
+}
