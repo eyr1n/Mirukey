@@ -51,28 +51,28 @@ struct ProfileScreen: View {
           .padding(.vertical, Spacing.md)
           Divider()
         }
+
+        Picker("", selection: $selectedFilter) {
+          ForEach(ProfileNoteFilter.allCases) { filter in
+            Text(filter.title).tag(filter)
+          }
+        }
+        .pickerStyle(.segmented)
+        .padding(.horizontal, Spacing.lg)
+        .padding(.vertical, Spacing.md)
+
+        PaginatedList(paginator: paginator, fetch: fetchNotes) { note in
+          VStack(spacing: 0) {
+            NoteRow(
+              note: note,
+              onDeleted: { paginator.remove(id: $0) },
+              onPosted: { paginator.prepend($0) }
+            )
+            Divider()
+          }
+        }
       } else {
         LoadingListRow()
-      }
-
-      Picker("", selection: $selectedFilter) {
-        ForEach(ProfileNoteFilter.allCases) { filter in
-          Text(filter.title).tag(filter)
-        }
-      }
-      .pickerStyle(.segmented)
-      .padding(.horizontal, Spacing.lg)
-      .padding(.vertical, Spacing.md)
-
-      PaginatedList(paginator: paginator, fetch: fetchNotes) { note in
-        VStack(spacing: 0) {
-          NoteRow(
-            note: note,
-            onDeleted: { paginator.remove(id: $0) },
-            onPosted: { paginator.prepend($0) }
-          )
-          Divider()
-        }
       }
     }
     .navigationTitle("Profile")
@@ -122,8 +122,10 @@ struct ProfileScreen: View {
     }
   }
 
-  private var displayUserId: String {
-    if userId == "me" {
+  private var resolvedUserId: String? {
+    if userId.hasPrefix("@") {
+      profile?.id
+    } else if userId == "me" {
       session.account.userId
     } else {
       userId
@@ -143,17 +145,27 @@ struct ProfileScreen: View {
   }
 
   private func refreshProfile() async throws {
-    profile = try await session.apiKit
-      .response(for: MisskeyAPI.UsersShowRequest(userId: displayUserId))
+    let request: MisskeyAPI.UsersShowRequest
+    if userId.hasPrefix("@") {
+      let parts = userId.dropFirst().split(separator: "@")
+      request = MisskeyAPI.UsersShowRequest(
+        username: String(parts[0]),
+        host: parts.count > 1 ? String(parts[1]) : nil
+      )
+    } else {
+      request = MisskeyAPI.UsersShowRequest(userId: resolvedUserId)
+    }
+    profile = try await session.apiKit.response(for: request)
   }
 
   private func fetchNotes(_ limit: Int, _ untilId: String?) async throws
     -> [MisskeyAPI.Note]
   {
+    guard let resolvedUserId else { return [] }
     return try await session.apiKit.response(
       for:
         MisskeyAPI.UsersNotesRequest(
-          userId: displayUserId,
+          userId: resolvedUserId,
           withReplies: selectedFilter == .all,
           limit: limit,
           untilId: untilId,
